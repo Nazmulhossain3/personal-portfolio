@@ -3,7 +3,7 @@ import Navbar from "../Pages/Navbar/Navbar";
 
 const Main = () => {
     return (
-        <div>
+        <div className="w-[1000px] mx-auto">
             <Navbar></Navbar>
           <Outlet></Outlet>  
         </div>
