@@ -1,7 +1,19 @@
 import {  FaBootstrap, FaCss3Alt, FaDatabase, FaHtml5, FaJs, FaNode, FaReact } from "react-icons/fa";
+import AOS from 'aos';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
+
+
+
 const Skills = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+      }, []);
+
+
     return (
-        <div>
+        <div name='skills' data-aos="flip-left" className="">
             <h2 className="text-4xl font-serif mt-6 text-center"> I am Skill at</h2>
             <hr className="ml-20 mr-20 font-semibold mt-4" />
             <hr className="ml-20 mr-20 font-semibold" />

@@ -1,10 +1,20 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import { FaBriefcase } from "react-icons/fa";
+import AOS from 'aos';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
+
 
 const Experince = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="px-12 py-6 ml-6 font-serif mt-6 flex flex-col md:flex-row">
-      <div>
+    <div name='experince' className="px-12 py-6 ml-6 font-serif mt-6 flex flex-col md:flex-row">
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <h2>
           || <span className="ml-6 ">Job Experience</span>
         </h2>
@@ -25,8 +35,10 @@ const Experince = () => {
       </div>
 
      
-      <div className="p-8">
-          <div className="w-96">
+      <div className="p-8" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+          <div className="md:w-96">
             <p className="mb-4">HTML</p>
             <ProgressBar
               completed={92}
@@ -34,7 +46,7 @@ const Experince = () => {
               animateOnRender={true}
             />
           </div>
-          <div className="w-96 mt-4">
+          <div className="md:w-96 mt-4">
             <p className="mb-4">CSS and Framework(Bootstrap and Tailwind)</p>
             <ProgressBar
               completed={80}
@@ -43,7 +55,7 @@ const Experince = () => {
             />
           </div>
 
-          <div className="w-96 mt-4">
+          <div className="md:w-96 mt-4">
             <p className="mb-4">JavaScript</p>
             <ProgressBar
               completed={70}
@@ -52,7 +64,7 @@ const Experince = () => {
             />
           </div>
 
-          <div className="w-96 mt-4">
+          <div className="md:w-96 mt-4">
             <p className="mb-4">React</p>
             <ProgressBar
               completed={80}

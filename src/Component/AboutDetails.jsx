@@ -1,9 +1,18 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import AOS from 'aos';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 const AboutDetails = () => {
-    return (
-        <div className="px-12 py-6 flex flex-col md:flex-row">
-            <div className="ml-6 ">
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+      }, []);
+   
+      return (
+        <div name='aboutDetails' className="px-12 py-6 flex flex-col md:flex-row">
+            <div className="ml-6 "  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                 <p className=" mb-6">||  <span className="ml-10  font-serif">About Me</span> </p>
                 <p className="text-xl font-serif">My Name is Nazmul</p>
                 <p className="text-4xl mt-5 font-serif">I am available for  MERN stack Projects</p>
@@ -19,7 +28,7 @@ const AboutDetails = () => {
                 </div>
           
 
-            <div>
+            <div data-aos="fade-left">
                 <img src="https://i.ibb.co/x6c8CnP/aboutme-removebg-preview-fotor-20230629143443.png" alt="" />
             </div>
 
