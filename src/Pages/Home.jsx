@@ -2,6 +2,7 @@ import AboutDetails from "../Component/AboutDetails";
 import Banner from "./Home/Banner";
 import Contact from "./Home/Contact";
 import Experince from "./Home/Experince";
+import Footer from "./Home/Footer";
 import ProjectDetails from "./Home/ProjectDetails";
 import Skills from "./Home/Skills";
 import SoftSkill from "./Home/SoftSkill";
@@ -16,6 +17,7 @@ const Home = () => {
          <Experince></Experince>
          <ProjectDetails></ProjectDetails>
          <Contact></Contact>
+         <Footer></Footer>
         </div>
     );
 };
