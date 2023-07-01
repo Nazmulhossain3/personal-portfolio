@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-end mr-10">
-        <p>Hire Me >></p>
+       <NavLink to='/about' className={({ isActive}) =>isActive ? "text-green-400" : ""}> <p>Hire Me >></p></NavLink>
         </div>
       </div>
     );

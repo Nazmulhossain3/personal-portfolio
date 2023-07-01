@@ -6,6 +6,7 @@ const Main = () => {
         <div className="w-[1000px] mx-auto">
             <Navbar></Navbar>
           <Outlet></Outlet>  
+         
         </div>
     );
 };

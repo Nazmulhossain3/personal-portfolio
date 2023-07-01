@@ -1,8 +1,15 @@
+import Contact from "../Pages/Home/Contact";
+import Footer from "../Pages/Home/Footer";
+import AboutDetails from "./AboutDetails";
 
 const About = () => {
     return (
-        <div>
-            <h2>this is about section</h2>
+        <div className=" bg-[#252734] text-white">
+            <AboutDetails></AboutDetails>
+            <Contact></Contact>
+            <Footer></Footer>
+
+
         </div>
     );
 };
